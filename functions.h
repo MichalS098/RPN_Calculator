@@ -2,6 +2,7 @@
 #define FUNCTIONS_H
 
     #define EMPTY_STACK 1            //defining simple macros
+    #define MAX_INPUT_SIZE 100       //defining max input to store from stdin
     #define TRUE 1
     #define FALSE 0
 
@@ -12,8 +13,10 @@
 
     int push(t_stack **, double);       //functions declaration
     double pop(t_stack **);
-    int IsEmpty(t_stack *);
+    int isEmpty(t_stack *);
     int printStack(t_stack *);
+    int swap(t_stack **);
     void menu(void);
+    int read(char **);
 
 #endif 
