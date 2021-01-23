@@ -16,5 +16,5 @@ main.o: main.c functions.h
 	$(CC) $(FLAGS) main.c -c -o main.o $(LIBS)
 
 clean:
-	rm -f rpnCalculator         					 #command 'make clean' will delete compiled executable program
+	rm -f rpnCalculator         					
 

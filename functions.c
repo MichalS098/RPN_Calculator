@@ -28,7 +28,7 @@ int push(t_stack **head, double data)
 double pop(t_stack **head)                                        //function that return value of the data stored at the start of stack
 {
     if(isEmpty(*head)){                                        //checks if the stack is empty
-        fprintf(stderr,"The stack is empty, there is nothing to pop.\n");
+        fprintf(stderr,"Error: The stack is empty, there is nothing to pop\n");
         return (EMPTY_STACK);
     }
     else{
@@ -49,7 +49,7 @@ int isEmpty(t_stack *head)
 int printStack(t_stack *head)
 {
     if(isEmpty(head)){                                        //checks if the stack is empty
-        fprintf(stderr,"The stack is empty.\n");
+        fprintf(stderr,"Error: The stack is empty\n");
         return (EMPTY_STACK);
     }
     else{
@@ -81,10 +81,10 @@ int swap(t_stack **head)            //function to swap two last elements
 
 void menu(void)
 {
-    printf("Welcome to reverse Polish notation calculator.\n");
+    printf("Welcome to reverse Polish notation calculator\n");
     printf("\tYour available options are :\n");
     printf("\tAdd number to the stack: just enter any number\n");
-    printf("\tAdd negative number: enter '_' character and then enter number\n");
+    printf("\tAdd negative number: enter '-' character and then enter number without space between\n");
     printf("\tPrint all stack: enter 'f'\n");
     printf("\tPrint last number on the stack: enter 'p'\n");
     printf("\tClear all stack: enter 'c'\n");
@@ -104,10 +104,10 @@ void menu(void)
     printf("\tQuit program: 'q'\n");
 }
 
-int read(char **inputChar)    //function to read input from user and save it to two dimensional array
+int read(char **inputChar)    //function to read input from user and save it to two dimensional char array
 {
     int i=0,j=0,k=0;
-    char userInput[MAX_INPUT_SIZE];
+    char userInput[MAX_INPUT];
 
     scanf("%s",userInput);                      //reading input
 

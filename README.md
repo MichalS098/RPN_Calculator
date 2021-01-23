@@ -29,11 +29,11 @@ Example:
 this will push 3, 2 and 1 to the stack and make addition on 1 and 2, result is remaining 3 and 3 in stack.
 
 **Warning** : You can type multiple operations at once in line only if you use space button to seperate them.  
-(Only exception is when you are inserting an negative number with '`_`', then you have to type it together, for example '`_3`' will push -3 to the stack).
+(Only exception is when you are inserting an negative number with '`-`', then you have to type it together, for example '`-3`' will push -3 to the stack).
 
 ## List of options: ##
 - Pushing number to the stack: type any integer number, '```1```' will add 1
-- Pushing negative number to the stack: '```_24```' will add -24
+- Pushing negative number to the stack: '```-24```' will add -24
 - Displaying the entire stack: '```f```'
 - Displaying last number on the stack: '```p```'
 - Clearing all stack: '```c```'

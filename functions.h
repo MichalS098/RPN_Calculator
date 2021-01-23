@@ -1,8 +1,8 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
-    #define EMPTY_STACK 1            //defining simple macros
-    #define MAX_INPUT_SIZE 100       //defining max input to store from stdin
+    #define MAX_INPUT 1000       //defining max input to store from stdin
+    #define EMPTY_STACK 2            //defining simple macros
     #define TRUE 1
     #define FALSE 0
 
